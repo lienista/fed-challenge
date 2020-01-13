@@ -10,6 +10,7 @@ html, body {
 body {
   min-height: 100%;
   height: auto;
+  position: relative;
 }
 
 h1,
@@ -32,17 +33,189 @@ h5 {
 *******************************/
 
 .hero {
+  background-color: #D9EEF1;
+  height: 420px;
+  width: 100%;
+  display: flex;
+}
 
+.hero .logo {
+  padding: 20px 0;
+}
+
+.hero .logo > img{
+  height: 30px;
+}
+
+.hero .header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+h1.header-title {
+  font-family: "Merriweather", Times New Roman, serif;
+  font-size: 36px;
+}
+
+.header-hero-content {
+  font-size: 18px;
+  line-height: 1.5
+}
+
+.hero .header-content {
+  width: 50%;
+  justify-content: flex-start;
+  padding-right: 10%;
+}
+
+.hero .header-image {
+  width: 50%;
+  justify-content: flex-end;
+  
+}
+
+.hero .header-image > img {
+  height: 500px;
 }
 
 .page {
+  padding: 150px 0 30px;
+}
 
+.page .cards {
+  display: flex;
+  flex-direction: row;
+  align-content: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  margin: 2%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ECECEC;
+  -webkit-box-shadow: 5px 5px 15px 5px #d1d1d1; 
+  box-shadow: 5px 5px 15px 5px #d1d1d1;
+}
+
+.card:first-child,
+.card:nth-child(4n) {
+  margin-left: 0;
+  align-self: flex-start;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+  align-self: flex-end;
+}
+
+.card-header-image {
+  -webkit-box-shadow: 5px 5px 15px 5px #ffffff; 
+  box-shadow: 5px 5px 15px 5px #ffffff;
+  background-color: #2E3431;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.card-header-image img {
+  align-self: center;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 18px;
+}
+.card-content {
+  padding: 30px;
+}
+
+.card-description {
+  line-height: 1.5;
 }
 
 .footer {
-
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
 }
 
+.footer-spread {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-copyright .container {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  color: #ECECEC;
+  flex-direction: row;
+}
+
+.company-logo {
+  display: inline-block;
+  height: 20px;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.company-info {
+  line-height: 20px;
+  font-size: 12px;
+  width: calc(100% - 100px);
+}
+
+
+.footer-cards {
+  display: flex;
+  color: #BCBCBC;
+  font-size: 24px;
+  flex-direction: row;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.footer-card {
+  padding: 0 100px;
+  height: 100px;
+  justify-content: center;
+  padding: 0 0 0 100px;
+  width: 50%;
+}
+
+.footer-card .bold {
+  color: black;
+}
+
+.footer-card:first-child {
+  border-right: 1px solid #ECECEC;
+  padding: 0 100px 0 0;
+}
 
 /*******************************
          Responsive
